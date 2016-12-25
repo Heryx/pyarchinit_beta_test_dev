@@ -808,7 +808,7 @@ try:
 		#def __repr__"
 		def __repr__(self):
 			return "<MEDIA('%d', '%d', '%s', '%s', %s, '%s', '%s')>" % (
-			sekf.id_media_thumb,
+			self.id_media_thumb,
 			self.id_media,
 			self.mediatype,
 			self.media_filename,
@@ -1682,7 +1682,7 @@ try:
 ##		note
 ##		):
 ##
-##			self.rel_check = rel_check						  #0 d
+##			self.id_rel_check = id_rel_check						  #0 d
 ##			self.sito =sito									  #1 s
 ##			self.area = area								  #2 s 
 ##			self.us = us									  #3 d
@@ -1696,7 +1696,7 @@ try:
 ##		#def __repr__"
 ##		def __repr__(self):
 ##			return "<RELATIONSHIP_CHECK('%d', '%s', '%s', '%d', '%s', '%s', '%s', '%d', '%s', '%s')>" % (
-##			self.rel_check,					                  #0 d
+##			self.id_rel_check,					                  #0 d
 ##			self.sito,							          	  #1 s
 ##			self.area,                                        #2 s 
 ##			self.us,       									  #3 d
