@@ -1108,11 +1108,11 @@ class pyarchinit_Inventario_reperti(QDialog, Ui_DialogInventarioMateriali):
 					msg = self.ID_TABLE + " gia' presente nel database"
 				else:
 					msg = e
-				QMessageBox.warning(self, "Errore", "immisione 1 \n"+ str(msg),  QMessageBox.Ok)
+				QMessageBox.warning(self, "Errore", "immissione 1 \n"+ str(msg),  QMessageBox.Ok)
 				return 0
 
 		except Exception, e:
-			QMessageBox.warning(self, "Errore", "Errore di immisione 2 \n"+str(e),  QMessageBox.Ok)
+			QMessageBox.warning(self, "Errore", "Errore di immissione 2 \n"+str(e),  QMessageBox.Ok)
 			return 0
 
 	#insert new row into tableWidget
