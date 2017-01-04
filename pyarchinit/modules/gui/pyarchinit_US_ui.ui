@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>685</width>
+    <width>683</width>
     <height>851</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
     <normaloff>:/images/iconPAI.png</normaloff>:/images/iconPAI.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_24">
-   <item row="0" column="0" colspan="5">
+   <item row="0" column="0" colspan="7">
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
       <widget class="QLabel" name="label_29">
@@ -274,100 +274,7 @@
      </item>
      <item row="1" column="0">
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="5">
-        <widget class="QPushButton" name="pushButton_last_rec">
-         <property name="toolTip">
-          <string>Last rec</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/7_rightArrows.png</normaloff>:/images/7_rightArrows.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="6">
-        <widget class="QPushButton" name="pushButton_new_rec">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>New record</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/newrec.png</normaloff>:/images/newrec.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="7">
-        <widget class="QPushButton" name="pushButton_save">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>Save</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/b_save.png</normaloff>:/images/b_save.png</iconset>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QPushButton" name="pushButton_new_search">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>new search</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/new_search.png</normaloff>:/images/new_search.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QPushButton" name="pushButton_search_go">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>search !!!</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
+       <item row="1" column="9">
         <widget class="QPushButton" name="pushButton_sort">
          <property name="font">
           <font>
@@ -386,40 +293,7 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="7">
-        <widget class="QPushButton" name="pushButton_view_all">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>View alls records</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/view_all.png</normaloff>:/images/view_all.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QPushButton" name="pushButton_next_rec">
-         <property name="toolTip">
-          <string>Next rec</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/images/6_rightArrow.png</normaloff>:/images/6_rightArrow.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
+       <item row="0" column="6">
         <widget class="QPushButton" name="pushButton_prev_rec">
          <property name="maximumSize">
           <size>
@@ -439,7 +313,21 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
+       <item row="0" column="7">
+        <widget class="QPushButton" name="pushButton_next_rec">
+         <property name="toolTip">
+          <string>Next rec</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/6_rightArrow.png</normaloff>:/images/6_rightArrow.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
         <widget class="QPushButton" name="pushButton_first_rec">
          <property name="toolTip">
           <string>First rec</string>
@@ -453,7 +341,7 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
+       <item row="1" column="5">
         <widget class="QPushButton" name="pushButton_delete">
          <property name="maximumSize">
           <size>
@@ -478,7 +366,145 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
+       <item row="1" column="10">
+        <widget class="QPushButton" name="pushButton_view_all">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>View alls records</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/view_all.png</normaloff>:/images/view_all.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8">
+        <widget class="QPushButton" name="pushButton_last_rec">
+         <property name="toolTip">
+          <string>Last rec</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/7_rightArrows.png</normaloff>:/images/7_rightArrows.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9">
+        <widget class="QPushButton" name="pushButton_new_rec">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>New record</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/newrec.png</normaloff>:/images/newrec.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="10">
+        <widget class="QPushButton" name="pushButton_save">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Save</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/b_save.png</normaloff>:/images/b_save.png</iconset>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QPushButton" name="pushButton_new_search">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>new search</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/new_search.png</normaloff>:/images/new_search.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="8">
+        <widget class="QPushButton" name="pushButton_search_go">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>search !!!</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="lineEdit_goto">
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
         <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -490,6 +516,13 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_61">
+         <property name="text">
+          <string>Rec step</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -739,7 +772,7 @@
      <item>
       <widget class="QComboBox" name="comboBox_unita_tipo">
        <property name="enabled">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="maximumSize">
         <size>
@@ -796,7 +829,7 @@
      <item>
       <widget class="QComboBox" name="comboBox_settore">
        <property name="enabled">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="maximumSize">
         <size>
@@ -970,7 +1003,7 @@
      <item>
       <widget class="QLineEdit" name="lineEdit_quadrato">
        <property name="enabled">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="minimumSize">
         <size>
@@ -1007,7 +1040,7 @@
      <item>
       <widget class="QLineEdit" name="lineEdit_ambiente">
        <property name="enabled">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="minimumSize">
         <size>
@@ -1044,7 +1077,7 @@
      <item>
       <widget class="QLineEdit" name="lineEdit_saggio">
        <property name="enabled">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="minimumSize">
         <size>
@@ -1076,7 +1109,7 @@
      </item>
     </layout>
    </item>
-   <item row="6" column="0" colspan="4">
+   <item row="6" column="0" colspan="7">
     <layout class="QGridLayout" name="gridLayout_6">
      <item row="0" column="0">
       <widget class="QComboBox" name="comboBox_def_strat">
@@ -1313,7 +1346,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_unita_edilizia_riassuntiva_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1350,7 +1383,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_qmin_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1387,7 +1420,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_qmax_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1424,7 +1457,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_lavorazione_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1461,7 +1494,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_reimpiego_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1498,7 +1531,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_posa_in_opera_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1565,7 +1598,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_spessore_giunti_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1602,7 +1635,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_letti_di_posa_giunti_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1639,7 +1672,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_h_modulo_c_corsi_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1698,7 +1731,7 @@ p, li { white-space: pre-wrap; }
             </widget>
            </item>
            <item>
-            <widget class="QComboBox" name="comboBox_coinsistenza_legante_usm">
+            <widget class="QComboBox" name="comboBox_consistenza_legante_usm">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -1814,7 +1847,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <widget class="QLineEdit" name="lineEdit_aggregati_legante_usm">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="minimumSize">
               <size>
@@ -1876,7 +1909,7 @@ p, li { white-space: pre-wrap; }
             </widget>
            </item>
            <item>
-            <widget class="QComboBox" name="comboBox_coinsistenza_texture_mat_usm">
+            <widget class="QComboBox" name="comboBox_consistenza_texture_mat_usm">
              <property name="font">
               <font>
                <pointsize>10</pointsize>
@@ -1991,30 +2024,6 @@ p, li { white-space: pre-wrap; }
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_insert_row_inclusi_materiali">
-             <property name="font">
-              <font>
-               <pointsize>9</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>inserisci riga</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_remove_row_inclusi_materiali">
-             <property name="font">
-              <font>
-               <pointsize>9</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>rimuovi riga</string>
-             </property>
-            </widget>
-           </item>
-           <item>
             <widget class="QTableWidget" name="tableWidget_inclusi_materiali_usm">
              <property name="maximumSize">
               <size>
@@ -2055,6 +2064,30 @@ p, li { white-space: pre-wrap; }
                <string>Inclusi</string>
               </property>
              </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_insert_row_inclusi_materiali">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>inserisci riga</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_remove_row_inclusi_materiali">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>rimuovi riga</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -3354,7 +3387,7 @@ p, li { white-space: pre-wrap; }
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>623</width>
+                <width>621</width>
                 <height>324</height>
                </rect>
               </property>
