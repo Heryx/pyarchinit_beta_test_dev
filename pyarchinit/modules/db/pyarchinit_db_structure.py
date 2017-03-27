@@ -870,3 +870,47 @@ class Documentazione_table:
 	)
 
 	metadata.create_all(engine)
+
+class Geophysics_table:
+	# connection string postgres"
+	internal_connection = Connection()
+
+	# create engine and metadata
+
+	engine = create_engine(internal_connection.conn_str(), echo=False, convert_unicode = True)
+	metadata = MetaData(engine)
+
+	# define tables
+	geophysics_table = Table('geophysics_table', metadata,
+	Column('id_grid', Integer, primary_key=True),   #0
+	Column('sito', Text),                           #1
+	Column('progetto', String(100)),                #2
+	Column('metodo', Text),                         #3
+	Column('anno', String(4)),                      #4
+	Column('settore', String(10)),                  #5
+	Column('area', String(10)),                     #6
+	Column('griglia', String(10)),                  #7
+	Column('pdc', Float(3,2)),                      #8
+	Column('quota', Float(3,2)),                    #9
+	Column('descrizione', Text),                    #10
+	Column('interpretazione', Text),                #11
+	Column('schedatore', Text),                     #12
+	Column('data_schedatura', String(20)),          #13
+	Column('modello', Text),                        #14
+	Column('velocita', Text),                       #15
+	Column('x', String(10)),                        #16
+	Column('y', String(10)),                        #17
+	Column('z', String(10)),                        #18
+	Column('date', String(20)),                     #19
+	Column('frequenza', Text),                      #20
+	Column('risoluzione', Float(2,2)),              #21
+	Column('max_prof', String(10)),                 #22
+	Column('range', String(10)),                    #23
+	Column('bibliografia', Text),					#24
+
+
+	# explicit/composite unique constraint.  'name' is optional.
+	UniqueConstraint('sito', 'progetto', 'metodo', 'anno', name='ID_geo_unico')
+	)
+
+	metadata.create_all(engine)

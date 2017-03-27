@@ -24,8 +24,11 @@ from sqlalchemy import *
 
 from sqlalchemy.orm import mapper
 
-from pyarchinit_db_structure import  Documentazione_table, PDF_administrator, US_table, UT_table, US_table_toimp, Site_table, Periodizzazione_table, Inventario_materiali_table, Struttura_table, Media_table, Media_thumb_table,Media_to_Entity_table, Tafonomia_table, Inventario_materiali_table_toimp, Pyarchinit_thesaurus_sigle, SCHEDAIND_table, DETSESSO_table, DETETA_table, Archeozoology_table, Campioni_table, Inventario_Lapidei_table
-
+from pyarchinit_db_structure import Documentazione_table, PDF_administrator, US_table, UT_table, US_table_toimp, \
+	Site_table, Periodizzazione_table, Inventario_materiali_table, Struttura_table, Media_table, Media_thumb_table, \
+	Media_to_Entity_table, Tafonomia_table, Inventario_materiali_table_toimp, Pyarchinit_thesaurus_sigle, \
+	SCHEDAIND_table, DETSESSO_table, DETETA_table, Archeozoology_table, Campioni_table, Inventario_Lapidei_table, \
+	Geophysics_table
 
 try:
 	class US(object):
@@ -808,7 +811,7 @@ try:
 		#def __repr__"
 		def __repr__(self):
 			return "<MEDIA('%d', '%d', '%s', '%s', %s, '%s', '%s')>" % (
-			sekf.id_media_thumb,
+			self.id_media_thumb,
 			self.id_media,
 			self.mediatype,
 			self.media_filename,
@@ -1782,6 +1785,96 @@ try:
 	#mapper
 
 	mapper(INVENTARIO_LAPIDEI, Inventario_Lapidei_table.inventario_lapidei_table)
+
+
+	class GEOPHYSICS(object):
+		# def __init__"
+		def __init__(self,
+		id_grid,  # 0
+		sito,  # 1
+		progetto,  # 2
+		metodo,  # 3
+		anno,  # 4
+		settore,  # 5
+		area,  # 6
+		griglia,  # 7
+		pdc,  # 8
+		quota,  # 9
+		descrizione,  # 10
+		interpretazione,  # 11
+		schedatore,  # 12
+		data_schedatura,  # 13
+		modello,  # 14
+		velocita,  # 15
+		x,  # 16
+		y,  # 17
+		z,  # 18
+		date,  # 19
+		frequenza,  # 20
+		risoluzione,  # 21
+		max_prof,  # 22
+		range,  # 23
+		bibliografia  # 26
+		):
+
+			self.id_grid = id_grid  # 0
+			self.sito = sito  # 1
+			self.progetto = progetto  # 2
+			self.metodo = metodo  # 3
+			self.anno = anno  # 4
+			self.settore = settore  # 5
+			self.area = area  # 6
+			self.griglia = griglia  # 7
+			self.pdc = pdc  # 8
+			self.quota = quota  # 9
+			self.descrizione = descrizione  # 10
+			self.interpretazione = interpretazione  # 11
+			self.schedatore = schedatore  # 12
+			self.data_schedatura = data_schedatura  # 13
+			self.modello = modello  # 14
+			self.velocita = velocita  # 15
+			self.x = x  # 16
+			self.y = y  # 17
+			self.z = z  # 18
+			self.date = date  # 19
+			self.frequenza = frequenza  # 20
+			self.risoluzione = risoluzione  # 21
+			self.max_prof = max_prof  # 22
+			self.range = range  # 23
+			self.bibliografia = bibliografia
+
+
+		def __repr__(self):
+			return "<GEOPHYSICS('%d', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%r', '%r', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s','%s', '%s', '%r', '%s', '%s', '%s')>" % (
+
+                self.id_grid,  # 0
+                self.sito,  # 1
+                self.progetto,  # 2
+                self.metodo,  # 3
+                self.anno,  # 4
+                self.settore,  # 5
+                self.area,  # 6
+                self.griglia,  # 7
+                self.pdc,  # 8
+                self.quota,  # 9
+                self.descrizione,  # 10
+                self.interpretazione,  # 11
+                self.schedatore,  # 12
+                self.data_schedatura,  # 13
+                self.modello,  # 14
+                self.velocita,  # 15
+                self.x,  # 16
+                self.y,  # 17
+                self.z,  # 18
+                self.date,  # 19
+                self.frequenza,  # 20
+                self.risoluzione,  # 21
+                self.max_prof,  # 22
+                self.range,  # 23
+                self.bibliografia
+            )
+
+	mapper(GEOPHYSICS, Geophysics_table.geophysics_table)
 
 
 

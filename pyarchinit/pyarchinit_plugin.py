@@ -73,6 +73,7 @@ from pyarchinit_Campioni_mainapp import pyarchinit_Campioni
 from pyarchinit_Thesaurus_mainapp import pyarchinit_Thesaurus
 from pyarchinit_Documentazione_mainapp import pyarchinit_Documentazione
 from pyarchinit_Inv_Lapidei import pyarchinit_Inventario_Lapidei
+from pyarchinit_geophysics_mainapp import pyarchinit_Geophysics
 
 class PyArchInitPlugin:
 
@@ -254,7 +255,12 @@ class PyArchInitPlugin:
 			self.actionUT.setWhatsThis(u"Unità Topografiche")
 			QObject.connect(self.actionUT, SIGNAL("triggered()"), self.runUT)
 
-			self.topoToolButton.addActions( [ self.actionUT ] )
+			icon_GEO = ('%s%s') % (filepath, os.path.join(os.sep, 'icons','iconGEO.png'))
+			self.actionGEO = QAction(QIcon(icon_GEO), u"Geofisica", self.iface.mainWindow())
+			self.actionGEO.setWhatsThis(u"Geofisica")
+			QObject.connect(self.actionGEO, SIGNAL("triggered()"), self.runGEO)
+
+			self.topoToolButton.addActions( [ self.actionUT, self.actionGEO ] )
 			self.topoToolButton.setDefaultAction(self.actionUT)
 
 ##			self.actionUT.setCheckable(True)
@@ -518,6 +524,11 @@ class PyArchInitPlugin:
 		pluginUT = pyarchinit_UT(self.iface)
 		pluginUT.show()
 		self.pluginGui = pluginUT # save
+
+	def runGEO(self):
+		pluginGEO = pyarchinit_Geophysics(self.iface)
+		pluginGEO.show()
+		self.pluginGui = pluginGEO # save
 
 	def runImages_directory_export(self):
 		pluginImage_directory_export = pyarchinit_Images_directory_export()
